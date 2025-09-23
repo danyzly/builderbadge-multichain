@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Builder Badge – Base</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; }
+      button { padding: .7rem 1rem; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; }
+      .row { display: flex; gap: .75rem; align-items: center; }
+      .muted { color:#666; }
+      .ok { color: #0a0; }
+      .err { color: #a00; }
+      #status { margin-top: 1rem; }
+      pre { background:#0b0f14; color:#cbd5e1; padding:12px; border-radius:8px; overflow:auto; }
+    </style>
+  </head>
+  <body>
+    <h1>Builder Badge (Base)</h1>
+    <p class="muted">Soulbound — one per wallet — target supply: 5,000</p>
+
+    <div class="row">
+      <button id="btn-connect">Connect wallet</button>
+      <span id="account" class="muted"></span>
+    </div>
+
+    <div id="info" style="margin-top:1rem;"></div>
+
+    <div class="row" style="margin-top:1rem;">
+      <button id="btn-claim" disabled>Claim badge</button>
+      <span id="minted" class="muted"></span>
+    </div>
+
+    <div id="status"></div>
+
+    <!-- Ethers v6 desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.2/dist/ethers.umd.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
