@@ -22,7 +22,7 @@ This project provides a secure and friendly minting experience, allowing users t
 - **MetaMask / Wallets** — User interaction.  
 
 ---
-
+```markdown
 ## 📂 Repository Structure (planned)
 
 builderbadge-multichain/
@@ -36,7 +36,7 @@ builderbadge-multichain/
 │ └─ celo/
 └─ frontend/ # Mint dApp (per chain)
 └─ mint-celo/
-
+```
 ---
 
 ## 📜 License
