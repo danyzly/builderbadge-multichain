@@ -1,0 +1,9 @@
+{
+  "name": "Builder Badge",
+  "description": "Soulbound builder badge (Celo). One per wallet.",
+  "image": "ipfs://bafybeictk637yxcxkp72hwr2mevjumeejxryxrnjgmagb6njpn4jsn6qb4",
+  "attributes": [
+    { "trait_type": "Chain", "value": "Celo" },
+    { "trait_type": "Type", "value": "Soulbound" }
+  ]
+}
