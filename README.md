@@ -26,17 +26,23 @@ This project provides a secure and friendly minting experience, allowing users t
 ## 📂 Repository Structure (planned)
 
 ```markdown
-builderbadge-multichain/
-├─ contracts/ # ABI and contract artifacts
-├─ deploy/ # Addresses per network
-│ ├─ celo/
-│ └─ base/
-├─ metadata/ # Metadata samples
-├─ scripts/ # Helpers and checks
-│ ├─ common/
-│ └─ celo/
-└─ frontend/ # Mint dApp (per chain)
-└─ mint-celo/
+├── contracts/
+│   └── BuilderBadge.abi.json
+├── deploy/
+│   ├── celo/
+│   │   └── addresses.json
+├── metadata/
+│   └── sample.json
+├── scripts/
+│   ├── common/
+│   │   └── rpc.js
+│   └── celo/
+│       └── claim-check.js
+└── frontend/
+    └── mint-celo/
+        ├── index.html
+        └── app.js
+
 ```
 ---
 
