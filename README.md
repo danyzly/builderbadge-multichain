@@ -35,6 +35,7 @@ builderbadge-multichain/
 │ ├─ common/
 │ └─ celo/
 └─ frontend/ # Mint dApp (per chain)
+└─ mint-celo/
 
 ---
 
