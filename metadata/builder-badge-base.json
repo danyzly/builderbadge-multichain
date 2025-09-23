@@ -1,0 +1,9 @@
+{
+  "name": "Builder Badge",
+  "description": "Soulbound builder badge (Base). One per wallet.",
+  "image": "ipfs://bafybeibu3lozy73r6jtdivmsdgvliqrj3dx6tizw2zwo77bkfh4lgl4tbi",
+  "attributes": [
+    { "trait_type": "Chain", "value": "Base" },
+    { "trait_type": "Type", "value": "Soulbound" }
+  ]
+}
