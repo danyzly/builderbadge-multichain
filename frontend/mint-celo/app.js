@@ -1,4 +1,4 @@
-import ABI from '../../contracts/BuilderBadge.abi.json' assert { type: 'json' };
+import ABI from '../../contracts/BuilderBadge.celo.abi.json' assert { type: 'json' };
 
 const CELO_CHAIN_ID = 42220; // mainnet
 const CONTRACT = '0x41e00f57D18a8e4e0E090E4032E3FcEb4C2379B2';
