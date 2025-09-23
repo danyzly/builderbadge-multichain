@@ -1,3 +1,6 @@
+// frontend/mint-base/app.js
+// Dapp de minteo en Base mainnet (chainId 8453)
+
 import ABI from '../../contracts/BuilderBadge.base.abi.json' assert { type: 'json' };
 
 const BASE_CHAIN_ID = 8453; // Base mainnet
@@ -21,7 +24,7 @@ async function ensureBase() {
   const chainIdHex = await provider.send('eth_chainId', []);
   const current = parseInt(chainIdHex, 16);
   if (current !== BASE_CHAIN_ID) {
-    // 8453 -> 0x2105
+    // 8453 decimal = 0x2105 hex
     await provider.send('wallet_switchEthereumChain', [{ chainId: '0x2105' }]);
   }
 }
@@ -31,6 +34,7 @@ async function connect() {
     ui('Please install an EVM wallet (e.g., MetaMask).', 'err');
     return;
   }
+
   provider = new ethers.BrowserProvider(window.ethereum);
   await provider.send('eth_requestAccounts', []);
   await ensureBase();
