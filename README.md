@@ -22,9 +22,10 @@ This project provides a secure and friendly minting experience, allowing users t
 - **MetaMask / Wallets** — User interaction.  
 
 ---
-```markdown
+
 ## 📂 Repository Structure (planned)
 
+```markdown
 builderbadge-multichain/
 ├─ contracts/ # ABI and contract artifacts
 ├─ deploy/ # Addresses per network
