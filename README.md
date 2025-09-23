@@ -7,6 +7,16 @@ This project provides a secure and friendly minting experience, allowing users t
 
 ---
 
+## 🧭 Networks
+
+- **Celo (mainnet)** — Address: `0x41e00f57D18a8e4e0E090E4032E3FcEb4C2379B2`  
+  TokenURI (IPFS): `ipfs://bafkreiaq4tg3zzetq4lgdjzc3gloyelq4hrzq7gghu2xdtyb6jfujp6bg4`
+
+- **Base (mainnet)** — Address: `0xBceF870dC2ED8Cd7EAB9aA44870A4766e793fe4C`  
+  TokenURI (IPFS): `ipfs://bafkreiem47nvbvx63n5cbteepr44mdr6trfn7ojojje6mpmpctjgmxz6i4`
+
+---
+
 ## 🎯 Project Goals
 - Soulbound Badge: non-transferable, one per wallet.  
 - Secure deployments with verified contracts.  
@@ -26,22 +36,30 @@ This project provides a secure and friendly minting experience, allowing users t
 ## 📂 Repository Structure (planned)
 
 ```markdown
+builderbadge-multichain/
 ├── contracts/
-│   └── BuilderBadge.abi.json
+│   ├── BuilderBadge.celo.abi.json
+│   └── BuilderBadge.base.abi.json
 ├── deploy/
 │   ├── celo/
 │   │   └── addresses.json
+│   └── base/
+│       └── addresses.json
 ├── metadata/
-│   └── sample.json
-├── scripts/
-│   ├── common/
-│   │   └── rpc.js
-│   └── celo/
-│       └── claim-check.js
-└── frontend/
-    └── mint-celo/
-        ├── index.html
-        └── app.js
+│   ├── builder-badge-celo.json
+│   └── builder-badge-base.json
+├── frontend/
+│   ├── mint-celo/
+│   │   ├── index.html
+│   │   └── app.js
+│   └── mint-base/
+│       ├── index.html
+│       └── app.js
+└── scripts/
+    ├── common/
+    │   └── rpc.js
+    └── celo/
+        └── claim-check.js
 
 ```
 ---
