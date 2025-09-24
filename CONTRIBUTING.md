@@ -1,39 +1,20 @@
-# Contributing
+# Contributing Guidelines
 
-Thanks for your interest! Please follow these guidelines.
+Thank you for considering contributing to **BuilderBadge Multichain**!
 
-## Workflow
-- Fork and create feature branches from `main`.
-- Use Conventional Commits: `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, etc.
-- Open a PR with a clear description and checklist (see PR template).
+## How to Contribute
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/your-feature`.
+3. Commit your changes with clear messages.
+4. Push to your fork and submit a Pull Request.
 
-## Project layout
-- Contracts ABI per chain in `contracts/`
-- Deployed addresses per chain in `deploy/<chain>/addresses.json`
-- Frontends in `frontend/mint-<chain>/`
-- Metadata in `metadata/`
+## Coding Standards
+- Use English for code comments and commits.
+- Follow existing folder structure and naming conventions.
 
-## Development
-For a quick local server:
-```bash
-# from repo root
-cd frontend/mint-celo && npx serve .
-# or
-cd ../mint-base && npx serve .
+## Submitting Issues
+- Use the issue templates provided (`Bug report`, `Feature request`).
+- Be clear and provide all required information.
 
-Then open the local URL in your browser (default: http://localhost:3000
-).
-
-🔐 Security
-
-Never commit private keys or API keys. Please report vulnerabilities via SECURITY.md.
-
-✅ PR Checklist
-
- Follows Conventional Commits
-
- Tested locally (describe how)
-
- No secrets/keys included
-
- Updated docs/README if applicable
+## Code of Conduct
+We expect all contributors to follow respectful and inclusive practices.
