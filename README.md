@@ -38,28 +38,50 @@ This project provides a secure and friendly minting experience, allowing users t
 ```markdown
 builderbadge-multichain/
 ├── contracts/
-│   ├── BuilderBadge.celo.abi.json
-│   └── BuilderBadge.base.abi.json
+│ ├── BuilderBadge.abi.json
+│ ├── BuilderBadge.celo.abi.json
+│ └── BuilderBadge.base.abi.json
+│
 ├── deploy/
-│   ├── celo/
-│   │   └── addresses.json
-│   └── base/
-│       └── addresses.json
-├── metadata/
-│   ├── builder-badge-celo.json
-│   └── builder-badge-base.json
+│ ├── celo/
+│ │ └── addresses.json
+│ └── base/
+│ └── addresses.json
+│
 ├── frontend/
-│   ├── mint-celo/
-│   │   ├── index.html
-│   │   └── app.js
-│   └── mint-base/
-│       ├── index.html
-│       └── app.js
-└── scripts/
-    ├── common/
-    │   └── rpc.js
-    └── celo/
-        └── claim-check.js
+│ ├── mint-celo/
+│ │ ├── index.html
+│ │ └── app.js
+│ └── mint-base/
+│ ├── index.html
+│ └── app.js
+│
+├── metadata/
+│ ├── builder-badge-celo.json
+│ ├── builder-badge-base.json
+│ └── sample.json
+│
+├── scripts/
+│ ├── common/
+│ │ └── rpc.js
+│ └── celo/
+│ └── claim-check.js
+│
+├── security/
+│ └── SECURITY.md
+│
+├── .github/
+│ ├── ISSUE_TEMPLATE/
+│ │ ├── bug_report.md
+│ │ ├── feature_request.md
+│ │ └── config.yml
+│ ├── pull_request_template.md
+│ └── FUNDING.yml
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── CONTRIBUTING.md
 
 ```
 ---
